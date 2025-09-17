@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Advanced Studies | Events</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand animate__animated animate__fadeInLeft" href="index.html">
+                <i class="fas fa-university me-2"></i>Department
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto animate__animated animate__fadeInRight">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="people.html">People</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="programs.html">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-3 animate__animated animate__fadeInDown">Events</h1>
+                    <p class="lead animate__animated animate__fadeInUp animate__delay-1s">Join our community for lectures, workshops, and special events</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Events Calendar -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto animate__animated animate__fadeIn">
+                    <div id="calendar" class="shadow-lg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5 animate__animated animate__fadeIn">
+                <h2 class="display-4">Upcoming Events</h2>
+                <p class="lead">Mark your calendar for these exciting opportunities</p>
+            </div>
+            <div class="row g-4" id="eventsContainer">
+                <!-- Event cards will be loaded here -->
+                <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp">
+                    <div class="card event-card h-100 shadow">
+                        <div class="card-header bg-primary text-white">
+                            <div class="event-date">
+                                <span class="event-day">15</span>
+                                <span class="event-month">MAR</span>
+                            </div>
+                            <h5 class="card-title mb-0">Annual Research Symposium</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><i class="fas fa-clock me-2"></i> 9:00 AM - 5:00 PM</p>
+                            <p class="card-text"><i class="fas fa-map-marker-alt me-2"></i> University Conference Center</p>
+                            <p class="card-text">Join us for a day of presentations from our top researchers and guest speakers from industry.</p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#" class="btn btn-primary">Register</a>
+                            <a href="#" class="btn btn-outline-primary ms-2">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp animate__delay-1s">
+                    <div class="card event-card h-100 shadow">
+                        <div class="card-header bg-primary text-white">
+                            <div class="event-date">
+                                <span class="event-day">22</span>
+                                <span class="event-month">MAR</span>
+                            </div>
+                            <h5 class="card-title mb-0">AI Workshop Series</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><i class="fas fa-clock me-2"></i> 2:00 PM - 4:00 PM</p>
+                            <p class="card-text"><i class="fas fa-map-marker-alt me-2"></i> Computer Science Building, Room 101</p>
+                            <p class="card-text">Hands-on workshop covering the latest techniques in machine learning and neural networks.</p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#" class="btn btn-primary">Register</a>
+                            <a href="#" class="btn btn-outline-primary ms-2">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 animate__animated animate__fadeInUp animate__delay-2s">
+                    <div class="card event-card h-100 shadow">
+                        <div class="card-header bg-primary text-white">
+                            <div class="event-date">
+                                <span class="event-day">5</span>
+                                <span class="event-month">APR</span>
+                            </div>
+                            <h5 class="card-title mb-0">Industry Panel: Careers in Tech</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"><i class="fas fa-clock me-2"></i> 6:00 PM - 8:00 PM</p>
+                            <p class="card-text"><i class="fas fa-map-marker-alt me-2"></i> Virtual (Zoom)</p>
+                            <p class="card-text">Hear from alumni working at top tech companies about career paths and opportunities.</p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#" class="btn btn-primary">Register</a>
+                            <a href="#" class="btn btn-outline-primary ms-2">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-primary animate__animated animate__fadeIn">View Past Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Modal -->
+    <div class="modal fade" id="eventModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="eventModalTitle">Event Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="eventModalBody">
+                    <!-- Event details will be loaded here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Events Section (Password Protected) -->
+    <section class="py-5" id="editEventsSection" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card shadow-lg">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0">Manage Events</h4>
+                        </div>
+                        <div class="card-body">
+                            <form id="eventForm">
+                                <input type="hidden" id="eventId">
+                                <div class="mb-3">
+                                    <label for="eventTitle" class="form-label">Event Title</label>
+                                    <input type="text" class="form-control" id="eventTitle" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="eventDate" class="form-label">Date</label>
+                                    <input type="date" class="form-control" id="eventDate" required>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="startTime" class="form-label">Start Time</label>
+                                        <input type="time" class="form-control" id="startTime" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="endTime" class="form-label">End Time</label>
+                                        <input type="time" class="form-control" id="endTime" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="eventLocation" class="form-label">Location</label>
+                                    <input type="text" class="form-control" id="eventLocation" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="eventDescription" class="form-label">Description</label>
+                                    <textarea class="form-control" id="eventDescription" rows="3" required></textarea>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <button type="submit" class="btn btn-primary">Save Event</button>
+                                    <button type="button" class="btn btn-danger" id="deleteEventBtn" style="display: none;">Delete Event</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Password Prompt Modal -->
+    <div class="modal fade" id="passwordModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Admin Access</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="passwordForm">
+                        <div class="mb-3">
+                            <label for="inputPassword" class="form-label">Enter Password</label>
+                            <input type="password" class="form-control" id="inputPassword" required>
+                            <div class="invalid-feedback">Incorrect password. Please try again.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="mb-4">Department of Technology & Justice Studies</h5>
+                    <p>1701 W Will Rogers Blvd<br>Herrington Hall<br>Claremore, Oklahoma 74017<br>United States</p>
+                    <p><i class="fas fa-phone me-2"></i> (918) 343-7608</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@rsu.edu</p>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white">About</a></li>
+                        <li class="mb-2"><a href="people.html" class="text-white">People</a></li>
+                        <li class="mb-2"><a href="programs.html" class="text-white">Programs</a></li>
+                        <li class="mb-2"><a href="events.html" class="text-white">Events</a></li>
+                        <li class="mb-2"><a href="news.html" class="text-white">News</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-4">Connect With Us</h5>
+                    <div class="social-links mb-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter for updates</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Department of Technology & Justice Studies. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed by TJS students</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize calendar
+            const calendarEl = document.getElementById('calendar');
+            const calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                },
+                events: [
+                    {
+                        title: 'Annual Research Symposium',
+                        start: '2023-03-15T09:00:00',
+                        end: '2023-03-15T17:00:00',
+                        description: 'Join us for presentations from our top researchers',
+                        location: 'University Conference Center'
+                    },
+                    {
+                        title: 'AI Workshop Series',
+                        start: '2023-03-22T14:00:00',
+                        end: '2023-03-22T16:00:00',
+                        description: 'Hands-on machine learning workshop',
+                        location: 'Computer Science Building, Room 101'
+                    },
+                    {
+                        title: 'Careers in Tech Panel',
+                        start: '2023-04-05T18:00:00',
+                        end: '2023-04-05T20:00:00',
+                        description: 'Hear from alumni about career opportunities',
+                        location: 'Virtual (Zoom)'
+                    }
+                ],
+                eventClick: function(info) {
+                    const modal = new bootstrap.Modal(document.getElementById('eventModal'));
+                    document.getElementById('eventModalTitle').textContent = info.event.title;
+                    
+                    let eventHtml = `
+                        <p><strong>Date:</strong> ${info.event.start.toLocaleDateString()}</p>
+                        <p><strong>Time:</strong> ${info.event.start.toLocaleTimeString()} - ${info.event.end.toLocaleTimeString()}</p>
+                        <p><strong>Location:</strong> ${info.event.extendedProps.location || 'TBA'}</p>
+                        <p><strong>Description:</strong> ${info.event.extendedProps.description || 'No description available.'}</p>
+                    `;
+                    
+                    document.getElementById('eventModalBody').innerHTML = eventHtml;
+                    modal.show();
+                }
+            });
+            calendar.render();
+            
+            // Password protection for editing events
+            const editEventsBtn = document.createElement('button');
+            editEventsBtn.className = 'btn btn-warning position-fixed bottom-0 end-0 m-3';
+            editEventsBtn.innerHTML = '<i class="fas fa-edit me-2"></i>Edit Events';
+            editEventsBtn.onclick = function() {
+                const modal = new bootstrap.Modal(document.getElementById('passwordModal'));
+                modal.show();
+            };
+            document.body.appendChild(editEventsBtn);
+            
+            // Password form submission
+            document.getElementById('passwordForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const password = document.getElementById('inputPassword').value;
+                
+                // In a real application, this would be a secure server-side check
+                if (password === 'admin123') { // Default password for demo
+                    document.getElementById('editEventsSection').style.display = 'block';
+                    document.getElementById('passwordModal').classList.remove('show');
+                    document.querySelector('.modal-backdrop').remove();
+                    document.body.classList.remove('modal-open');
+                    document.body.style.overflow = 'auto';
+                } else {
+                    document.getElementById('inputPassword').classList.add('is-invalid');
+                }
+            });
+            
+            // Event form submission
+            document.getElementById('eventForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Event saved! In a real application, this would update the events list.');
+                this.reset();
+            });
+        });
+    </script>
+</body>
+</html>

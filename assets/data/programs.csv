@@ -1,0 +1,5 @@
+name,level,description,duration,credits,admission
+"Bachelor of Science in Computer Science",undergraduate,"Comprehensive program covering all aspects of computer science fundamentals.",4 years,120,Fall/Spring
+"Master of Science in Data Science",graduate,"Advanced study of data analysis, machine learning, and big data technologies.",2 years,36,Rolling
+"PhD in Artificial Intelligence",phd,"Research-focused program with specializations in machine learning, robotics, and more.",4-6 years,Dissertation,Fall
+"Certificate in Cybersecurity",certificate,"Short-term program covering essential cybersecurity concepts and practices.",1 year,18,Rolling

@@ -1,0 +1,330 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 56px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/homebg.png') no-repeat center center;
+    background-size: cover;
+    height: 70vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/page-header-bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Cards */
+.card {
+    transition: all 0.3s ease;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #0e2240;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.faculty-card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.staff-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-card .card-header {
+    position: relative;
+    padding-left: 100px;
+    min-height: 80px;
+}
+
+.event-date {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    width: 60px;
+}
+
+.event-day {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.event-month {
+    display: block;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* Mission Cards */
+.mission-card {
+    border-top: 4px solid #0d6efd;
+    transition: all 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: scale(1.05);
+}
+
+/* Research Group Cards */
+.research-group-card {
+    transition: all 0.3s ease;
+}
+
+.research-group-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Cards */
+.contact-card {
+    border-top: 4px solid #0d6efd;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: scale(1.03);
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+    border-left: 4px solid #0d6efd;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.back-to-top.show {
+    opacity: 1;
+}
+
+/* Counters */
+.counter h2 {
+    font-weight: bold;
+}
+
+/* Map */
+.map-container {
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Animations */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.animate-on-scroll.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 60vh;
+        text-align: center;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .mission-card, .contact-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Custom Button Styles */
+.btn {
+    background-color: #c30e2e;
+    color: #ffffff !important;
+}
+
+.btn:hover {
+    background-color: #0e2240;
+    color: #ffffff !important;
+}
+
+.btn-primary {
+    background-color: #c30e2e;
+    border-color: #c30e2e;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0e2240;
+    border-color: #0e2240;
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary:hover {
+    transform: translateY(-2px);
+}
+
+/* Custom Form Styles */
+.form-control, .form-select {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    transform: translateY(-2px);
+}
+
+/* Custom Accordion Styles */
+.accordion-button:not(.collapsed) {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Custom Badge Styles */
+.badge {
+    padding: 5px 10px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Custom Navbar Styles */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-color: #0e2240;
+    color: #ffffff;
+}
+
+.bg-dark {
+    background-color: #0e2240;
+}
+
+.stats {
+    background-color: #0e2240;
+}
+
+.navbar.scrolled {
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #c30e2e !important;
+    color: #ffffff !important;
+}
+
+/* Custom Footer Styles */
+.footer {
+    background-color: #0e2240 !important;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #0d6efd;
+    transform: translateY(-3px);
+}
+
+/* FullCalendar Customization */
+.fc-header-toolbar {
+    margin-bottom: 1em !important;
+}
+
+.fc-event {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.fc-event:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Program Cards */
+.program-card {
+    transition: all 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.program-card .card-header {
+    padding: 15px;
+}
+
+/* News Cards */
+.news-card {
+    transition: all 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.news-card .card-body {
+    padding: 15px;
+}

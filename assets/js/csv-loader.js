@@ -75,7 +75,7 @@ function renderPrograms(programs) {
     
     programs.forEach((program, index) => {
         // Determine the animation delay based on index
-        const delayClass = index < 3 ? `animate__delay-${index}s` : '';
+        const delayClass = index < 3 ? `animate__delay-${index * 0.5}s` : '';
         
         const cardHtml = `
             <div class="col-lg-4 mb-4 animate__animated animate__fadeInUp ${delayClass}" data-program-type="${program.level}">

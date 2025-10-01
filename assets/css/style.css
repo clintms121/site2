@@ -328,3 +328,10 @@ body {
 .news-card .card-body {
     padding: 15px;
 }
+/* Compact FullCalendar look */
+#calendar { border-radius: 12px; overflow: hidden; }
+.fc .fc-toolbar-title { font-size: 1.15rem; }
+.fc .fc-button { padding: .25rem .55rem; font-size: .85rem; }
+.fc .fc-col-header-cell-cushion,
+.fc .fc-daygrid-day-number { padding: .25rem; font-size: .85rem; }
+.fc .fc-daygrid-day-frame { padding: .25rem; }

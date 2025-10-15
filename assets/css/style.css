@@ -108,7 +108,21 @@ body {
 
 /* Testimonial Cards */
 .testimonial-card {
-    border-left: 4px solid #0d6efd;
+    /* Use solid black static lines around the testimonial card */
+    border: 2px solid #000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: none; /* disable animation transitions for testimonial card */
+}
+
+/* Utility to explicitly disable hover effects */
+.no-hover, .no-hover .card {
+    transition: none !important;
+}
+
+/* Prevent transform on hover specifically for testimonial cards */
+.testimonial-card:hover {
+    transform: none !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
 }
 
 /* Back to Top Button */

@@ -342,3 +342,57 @@ body {
 .news-card .card-body {
     padding: 15px;
 }
+/* Modern Event Calendar Styling */
+.fc-toolbar-title {
+    font-size: 1.25rem;
+    color: #0d2a56;
+  }
+  
+  .fc .fc-button-primary {
+    background-color: #0d2a56;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .fc .fc-button-primary:hover {
+    background-color: #1c3b75;
+  }
+  
+  .fc .fc-daygrid-day.fc-day-today {
+    background-color: rgba(13, 42, 86, 0.08);
+    font-weight: bold;
+  }
+  
+  .fc {
+    border-radius: 16px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  }/* Compact Calendar Size */
+#calendar {
+    max-width: 800px;        /* Controls overall calendar width */
+    margin: 0 auto;          /* Centers it horizontally */
+    padding: 10px 20px;      /* Adds balanced padding inside */
+  }
+  
+  .fc {
+    padding: 15px !important; /* Slightly reduce internal space */
+  }
+  
+  .fc-toolbar-title {
+    font-size: 1.1rem !important; /* Make the month title smaller */
+  }
+  
+  .fc .fc-button {
+    padding: 0.3rem 0.6rem;  /* Smaller navigation buttons */
+    font-size: 0.85rem;
+  }
+ /* Space between "today" group and the title when they are in the same chunk */
+.fc .fc-toolbar-chunk > .fc-button-group + .fc-toolbar-title {
+    margin-left: 12px !important;
+  }
+  
+  /* Fallback: always give the title a little left margin */
+  .fc .fc-toolbar-title {
+    margin-left: 12px !important;
+  }

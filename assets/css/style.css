@@ -342,6 +342,7 @@ body {
 .news-card .card-body {
     padding: 15px;
 }
+
 /* Modern Event Calendar Styling */
 .fc-toolbar-title {
     font-size: 1.25rem;
@@ -368,7 +369,8 @@ body {
     background: #fff;
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  }/* Compact Calendar Size */
+  }
+/* Compact Calendar Size */
 #calendar {
     max-width: 800px;        /* Controls overall calendar width */
     margin: 0 auto;          /* Centers it horizontally */
@@ -396,3 +398,28 @@ body {
   .fc .fc-toolbar-title {
     margin-left: 12px !important;
   }
+
+/* Make card top images fit and crop nicely */
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    object-position: center 80%; /* shifted down — increase toward 90% to move further down, decrease toward 60% to move up */
+    background-color: #f8f9fa;
+    display: block;
+}
+
+/* If you only want faculty images shifted, use this instead:
+.faculty-card .card-img-top {
+    object-position: center 80%;
+}
+*/
+
+/* Ensure consistent card heights (optional) */
+.card.h-100 {
+    display: flex;
+    flex-direction: column;
+}
+.card.h-100 .card-body {
+    flex: 1 1 auto;
+}
